@@ -64,5 +64,5 @@ const firebaseConfig = {
                 window.location = "track_page/track.html";
             }
         });
-        //document.getElementById("wrong_code_indicator").style.display = "block";
+        document.getElementById("wrong_code_indicator").style.display = "block";
     }
